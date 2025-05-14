@@ -1,0 +1,15 @@
+<script>
+window.onerror = function(message, source, lineno, colno, error) {
+    document.body.innerHTML = `
+        <div class="container">
+            <h1>500</h1>
+            <h2>Internal Server Error</h2>
+            <p>Oops! Something went wrong on our end.<br>
+            Please try refreshing the page or come back later.</p>
+            <a href="/">Go to Homepage</a>
+        </div>
+    `;
+    document.body.style.background = "#f8f8f8";
+    return true; // Prevents default error handling
+};
+</script>
